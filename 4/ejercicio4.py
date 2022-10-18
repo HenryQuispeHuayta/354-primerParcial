@@ -29,7 +29,7 @@ def abuela(x,y):
   c = var()
   return conde((madre(x,c), madre(c,y)),(madre(x,c), padre(c,y)))
 
-def primo(x,y):
+def primos(x,y):
   c = var()
   d = var()
   return conde((padre(c,x), hermano(c,d), padre(d,y)),(padre(c,x), hermano(c,d), madre(d,y)),(madre(c,x), hermana(c,d), padre(d,y)),(madre(c,x), hermana(c,d), madre(d,y)))
@@ -38,4 +38,7 @@ def tios(x,y):
   c = var()
   d = var()
   return conde((hermano(x,c), padre(c,y)),(hermana(x,c), padre(c,y)),(hermano(x,c), madre(c,y)),(hermana(x,c), madre(c,y)))
+
+
+
 print(run(1,a,padre(a,'Henry')))
