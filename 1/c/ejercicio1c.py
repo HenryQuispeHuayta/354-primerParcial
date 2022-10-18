@@ -7,6 +7,7 @@ datos = pd.read_csv('../../dataset/high_diamond_ranked_10min.csv')
 
 sns.set_style('darkgrid')
 datos2 = datos.copy()
+# columnas = datos.columns
 columnas = ['gameId', 'redFirstBlood', 'redKills', 'redEliteMonsters', 'redDragons','redTotalMinionsKilled',
        'redTotalJungleMinionsKilled', 'redGoldDiff', 'redExperienceDiff', 'redCSPerMin', 'redGoldPerMin', 'redHeralds',
        'blueGoldDiff', 'blueExperienceDiff', 'blueCSPerMin', 'blueGoldPerMin', 'blueTotalMinionsKilled']
