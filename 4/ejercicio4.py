@@ -54,4 +54,4 @@ def tia(x,y):
 
 
 # print(run(1,a,padre(a,'Henry')))
-print(run(1,a,tios(a,'Henry')))
+print(run(1,a,tio(a,'Henry')))
