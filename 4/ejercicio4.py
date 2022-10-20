@@ -33,6 +33,10 @@ def abuela(x,y):
   c = var()
   return conde((madre(x,c), madre(c,y)),(madre(x,c), padre(c,y)))
 
+def hijos(x,y):
+  c = var()
+  return conde((madre(y,x), esposa(y,c),padre(c,x)), (padre(y,x), esposo(y,c),madre(c,x)))
+
 def primos(x,y):
   c = var()
   d = var()
